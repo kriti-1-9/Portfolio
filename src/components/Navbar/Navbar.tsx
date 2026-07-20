@@ -24,7 +24,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
             <p className="text-sm font-semibold uppercase tracking-[0.35em] text-slate-300">
               {profile.name}
             </p>
-            <p className="text-xs text-slate-400">Senior Software Engineer</p>
+            <p className="text-xs text-slate-400">Final-year Computer Science Student</p>
           </div>
         </a>
 

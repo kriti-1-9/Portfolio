@@ -49,6 +49,8 @@ export default function ContactSection() {
           </p>
           <a
             href={mailtoHref}
+            target="_self"
+            rel="noopener noreferrer"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
             aria-label="Email Kriti Dwivedi"
             title="Email Kriti"
