@@ -46,7 +46,9 @@ export default function Hero() {
 
         <div className="flex flex-wrap gap-3">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1SXXZesIglgJUYT2i7V4prg8ncatzsOaU/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
           >
             Download Resume <FiArrowRight />

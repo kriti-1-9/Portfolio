@@ -42,7 +42,9 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
 
         <div className="flex items-center gap-2">
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1SXXZesIglgJUYT2i7V4prg8ncatzsOaU/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
             className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm font-medium text-slate-200 transition hover:border-cyan-400/40 hover:bg-cyan-400/10 sm:inline-flex"
           >
             <FiDownload /> Resume

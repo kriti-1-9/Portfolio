@@ -28,8 +28,8 @@ export const profile = {
   subtitle:
     'Final-year Computer Science student focused on secure backend engineering, cybersecurity, and high-quality software delivery.',
   email: 'dwivedikriti700@gmail.com',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  github: 'https://github.com/kriti-1-9',
+  linkedin: 'https://www.linkedin.com/in/kriti-dwivedi-347912273/',
   leetcode: 'https://leetcode.com',
   location: 'Kanpur, Uttar Pradesh',
   phone: '+91 7880719251',
