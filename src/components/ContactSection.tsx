@@ -47,16 +47,27 @@ export default function ContactSection() {
           <p className="mt-3 text-lg leading-8 text-slate-300">
             Open to internship and entry-level opportunities where I can contribute to secure software systems, quality engineering, and impactful products.
           </p>
-          <a
-            href={mailtoHref}
-            target="_self"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
-            aria-label="Email Kriti Dwivedi"
-            title="Email Kriti"
-          >
-            Reach out <FiSend />
-          </a>
+          <div className="mt-6 flex items-center gap-3">
+            <a
+              href={mailtoHref}
+              className="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
+              aria-label="Email Kriti Dwivedi"
+              title="Email Kriti"
+            >
+              Reach out <FiSend />
+            </a>
+
+            <a
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${profile.email}&su=${encodeURIComponent('Opportunity / Collaboration')}&body=${encodeURIComponent('Hi Kriti,\n\nI came across your portfolio and would like to discuss an opportunity. Could we connect?\n\nRegards,')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-slate-100 transition hover:-translate-y-0.5"
+              aria-label="Open Gmail compose"
+              title="Open in Gmail"
+            >
+              Open in Gmail
+            </a>
+          </div>
         </div>
       </div>
     </motion.section>
