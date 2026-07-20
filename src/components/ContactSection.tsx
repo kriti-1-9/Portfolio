@@ -4,6 +4,8 @@ import { profile } from '../data/portfolio'
 import SectionHeading from './SectionHeading'
 
 export default function ContactSection() {
+  const mailtoHref = `mailto:${profile.email}?subject=${encodeURIComponent('Opportunity / Collaboration')}&body=${encodeURIComponent('Hi Kriti,\n\nI came across your portfolio and would like to discuss an opportunity. Could we connect?\n\nRegards,')}`
+
   return (
     <motion.section
       id="contact"
@@ -46,17 +48,10 @@ export default function ContactSection() {
             Open to internship and entry-level opportunities where I can contribute to secure software systems, quality engineering, and impactful products.
           </p>
           <a
-            href={`mailto:${profile.email}?subject=${encodeURIComponent('Opportunity / Collaboration')}&body=${encodeURIComponent('Hi Kriti,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity. Could we connect?%0D%0A%0D%0ARegards,')}`}
+            href={mailtoHref}
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-cyan-400 px-5 py-3 font-semibold text-slate-950 transition hover:-translate-y-0.5"
             aria-label="Email Kriti Dwivedi"
             title="Email Kriti"
-            onClick={() => {
-              try {
-                // Safe analytics hook — guard for undefined globals
-                const anyWin: any = window
-                anyWin.gtag?.('event', 'contact_click', { method: 'email' })
-              } catch {}
-            }}
           >
             Reach out <FiSend />
           </a>
